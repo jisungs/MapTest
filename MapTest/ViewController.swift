@@ -33,7 +33,15 @@ class ViewController: UIViewController, MKMapViewDelegate {
         
         map.setRegion(region, animated: true)
         
+        let annotation = MKPointAnnotation()
         
+        annotation.title = "Gyungbokgung"
+        
+        annotation.subtitle = "The kingdom's palace"
+        
+        annotation.coordinate = coordinate
+        
+        map.addAnnotation(annotation)
     }
 
 
